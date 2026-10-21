@@ -1,0 +1,16 @@
+name: anti-slop-review
+version: 1.0.0
+description: Review-only router skill for code, technical prose, and UI audits.
+author: rozsazoltan
+
+targets:
+  - opencode
+
+dependencies:
+  apm:
+    - blader/humanizer
+    - nutlope/hallmark/skills/hallmark
+    - cursor/plugins/cursor-team-kit/skills/deslop
+  mcp: []
+
+scripts: {}

@@ -10,6 +10,8 @@ Each skill lives in its own directory under `skills/` and follows the standard `
 | --- | --- |
 | [`anti-slop-review`](skills/anti-slop-review/SKILL.md) | Review-only routing skill that audits code, technical prose, and UI against AI-slop patterns without changing files by default. |
 
+Skills that need other skills are also APM packages: their `apm.yml` declares those dependencies, so installing the skill installs everything it routes to.
+
 ## Installation
 
 Install a skill directly with APM from this repository:
