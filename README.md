@@ -2,17 +2,17 @@
 
 Curated agent skills maintained by [rozsazoltan](https://github.com/rozsazoltan).
 
-Each skill lives in its own directory under `skills/` and follows the standard `SKILL.md` layout used by agent hosts such as [OpenCode](https://opencode.ai/) and [APM](https://github.com/microsoft/apm).
+Each skill is its own top-level directory in this repository and follows the standard `SKILL.md` layout used by agent hosts such as [OpenCode](https://opencode.ai/) and [APM](https://github.com/microsoft/apm).
 
 ## Installation
 
-Install a skill directly with APM from this repository:
+Install a skill directly with APM:
 
 ```bash
-apm install rozsazoltan/skills/skills/<skill-name> --target opencode
+apm install rozsazoltan/skills/<skill-name> --target opencode
 ```
 
-Replace `<skill-name>` with a directory name from `skills/`.
+Replace `<skill-name>` with the skill directory name. A skill that needs other skills declares them in its own `apm.yml`, so installing it installs everything it depends on.
 
 ## License
 
